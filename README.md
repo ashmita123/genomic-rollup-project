@@ -9,30 +9,30 @@ This project is a very simple **Solidity contract** simulating genomic data roll
 ## How to run
 
 #### 1. Navigate to the genomic-rollup-contract.
-        ```npm install```
+        npm install
 
 #### 2. Create .env in the genomic-rollup-contract folder. Here we will store
 
-        ``` ALCHEMY_API_KEY=YOUR_ALCHEMY_KEY
-            PRIVATE_KEY=YOUR_METAMASK_PRIVATE_KEY
-        ```
+        ALCHEMY_API_KEY=YOUR_ALCHEMY_KEY
+        PRIVATE_KEY=YOUR_METAMASK_PRIVATE_KEY
+        
 #### 3. Deploy Smart Contract
 
-        ``` npx hardhat compile
-            npx hardhat run scripts/deploy.js --network sepolia
-        ```
+        npx hardhat compile
+        npx hardhat run scripts/deploy.js --network sepolia
+
 #### 4. Create an .env file in genomic-rollup-app folder. Here we will add
 
-        ``` REACT_APP_CONTRACT_ADDRESS= YOUR_DEPLOYED_CONTRACT_ADDRESS
-        ```
+        REACT_APP_CONTRACT_ADDRESS= YOUR_DEPLOYED_CONTRACT_ADDRESS
+
 #### 5. From the genomic-rollup-contract execute following command to copy the abi.
-        ``` cp artifacts/contracts/GenomicDataRollup.sol/GenomicDataRollup.json ../genomic—rollup-app/src/contracts/
-        ```
+        cp artifacts/contracts/GenomicDataRollup.sol/GenomicDataRollup.json ../genomic—rollup-app/src/contracts/
+        
 #### 6. Navigate to the genomic-rollup-app and now we can start the react app.
 
-        ``` npm install
-            npm start
-        ```
+        npm install
+        npm start
+        
 #### 7. Open your browser at http://localhost:3000 and interact with the app.
 
 ## Assumptions
